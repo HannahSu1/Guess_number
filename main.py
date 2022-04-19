@@ -8,8 +8,8 @@
 # If they run out of turns, provide feedback to the player. 
 # Include two different difficulty levels (e.g., 10 guesses in easy mode, only 5 guesses in hard mode).
 
-from art import logo
-print(logo)
+# from art import logo
+# print(logo)
 
 import random
 target = random.randint(1,100)
@@ -32,7 +32,9 @@ def game(target_num,cnt):
             break            
             
 if level == 'easy':
+    print("You have 10 attempts remaining to guess the number.")
     game(target,cnt=10)    
 elif level == 'hard':
+    print("You have 5 attempts remaining to guess the number.")
     game(target,cnt=5)
 
